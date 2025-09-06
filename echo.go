@@ -6,9 +6,10 @@ import (
 	"io"
 	"strings"
 
-	localopt "github.com/yupsh/echo/opt"
 	yup "github.com/yupsh/framework"
 	"github.com/yupsh/framework/opt"
+
+	localopt "github.com/yupsh/echo/opt"
 )
 
 // Flags represents the configuration options for the echo command

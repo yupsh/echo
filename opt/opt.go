@@ -2,12 +2,14 @@ package opt
 
 // Boolean flag types with constants
 type NoNewlineFlag bool
+
 const (
 	NoNewline   NoNewlineFlag = true
 	WithNewline NoNewlineFlag = false
 )
 
 type EscapeFlag bool
+
 const (
 	EnableEscape  EscapeFlag = true
 	DisableEscape EscapeFlag = false
@@ -21,4 +23,4 @@ type Flags struct {
 
 // Flag configuration methods
 func (f NoNewlineFlag) Configure(flags *Flags) { flags.NoNewline = f }
-func (f EscapeFlag) Configure(flags *Flags) { flags.Escape = f }
+func (f EscapeFlag) Configure(flags *Flags)    { flags.Escape = f }
